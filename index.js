@@ -5,4 +5,12 @@ const express = require('express')
 
 const app = express()
 
-app.listen(PORT, () => console.log(`server running on PORT ${PORT}`));
+const url = 'https://news.ycombinator.com/'
+
+axios(url)
+    .then(response => {
+        const html = response.data
+        console.log(html)
+    })
+
+app.listen(PORT, () => console.log(`server running on PORT ${PORT}`))
