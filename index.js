@@ -18,9 +18,9 @@ app.get('/results', (req, res) => {
             const html = response.data
             const $ = cheerio.load(html)
             const articles = []
-            
+
             $('.athing', html).each(function() {
-                const title = $(this).find('.title .titleline').text()
+                const title = $(this).find('.title .titleline a:first-of-type').text()
                 const rank = $(this).find('.rank').text()
                 const points = $(this).next().find('.score').text()
                 const comments = $(this).next().find('.subtext a:contains("comment")').text() 
