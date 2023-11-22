@@ -31,7 +31,7 @@ app.get('/scrape', async (req, res) => {
     res.json(topArticles);
   } catch (err) {
     console.error(err);
-    res.status(500).json({ error: 'Internal Server Error' });
+    res.status(500).json({ error: 'Internal Server Error' }); 
   }
 });
 
