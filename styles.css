@@ -1,0 +1,59 @@
+.buttonContainer {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.buttonContainer button {
+    padding: 10px;
+    border: 1px solid;
+    border-radius: 15px;
+    box-shadow: 0 5px #999;
+    cursor: pointer;
+}
+
+.buttonContainer button:hover {
+    text-decoration: underline;
+}
+
+.buttonContainer button:active {
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+  }
+
+#feed .wrapper {
+    border: 1px solid;
+    border-radius: 5px;
+    margin: 10px;
+    padding: 10px;
+}
+
+#feed .wrapper .titleContainer {
+    display: flex;
+}
+
+#feed .wrapper .titleContainer p {
+    font-size: 18px;
+}
+
+#feed .wrapper .titleContainer a {
+    text-decoration: underline;
+    padding-left: 10px;
+    color: #000;
+}
+
+#feed .wrapper .titleContainer a:hover {
+    text-decoration: none;
+}
+
+#feed .wrapper .infoContainer {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#feed .wrapper .infoContainer .points::before {
+    content: "Points: ";
+}
+
+#feed .wrapper .infoContainer .comments::before {
+    content: "Comments: ";
+}
