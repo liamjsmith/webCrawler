@@ -3,11 +3,24 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
   <title>Web Scraper Frontend</title>
 </head>
+<!-- <body>
+    <div id="feed"></div>
+
+    <script src="src/app.js"></script>
+</body> -->
+
 <body>
+    <div class="buttonContainer">
+        <button id="filterByComments">Filter by More Than 5 Words (Comments)</button>
+        <button id="filterByPoints">Filter by Less Than or Equal to 5 Words (Points)</button>
+        <button id="reset">Reset</button>
+    </div>
     <div id="feed"></div>
 
     <script src="src/app.js"></script>
 </body>
+
 </html>
