@@ -21,11 +21,13 @@ app.get('/results', (req, res) => {
 
             $('.athing', html).each(function() {
                 const title = $(this).find('.title .titleline a:first-of-type').text()
+                const url = $(this).find('.title .titleline a').attr('href')
                 const rank = $(this).find('.rank').text()
                 const points = $(this).next().find('.score').text()
                 const comments = $(this).next().find('.subtext a:contains("comment")').text() 
                 articles.push({
                     title,
+                    url,
                     rank,
                     comments: parseInt(comments) || 0,
                     points: parseInt(points) || 0,
